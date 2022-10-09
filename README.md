@@ -65,3 +65,23 @@ npm run start:dev
 
 inside directory project open folder "/postman", or use this link
 https://www.getpostman.com/collections/82c0893bd27e0042aa5e
+
+# Question Test Query
+
+```bash
+SELECT
+	t1.rep_id AS mst_gepd,
+	t1.NAME AS name_gepd,
+	t2.rep_id AS mst_epd,
+	t2.NAME AS name_epd,
+	t3.branch_id,
+	t3.NAME AS NAME
+FROM
+	Members AS t1
+	LEFT JOIN Members AS t2 ON t2.manager_id = t1.rep_id
+	LEFT JOIN Members AS t3 ON t3.manager_id = t2.rep_id
+WHERE
+	t3.NAME IS NOT NULL;
+```
+
+![image query test](https://raw.githubusercontent.com/mimron/mimron_trs_api/main/public/images/img-query.png)
