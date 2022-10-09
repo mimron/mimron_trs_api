@@ -1,0 +1,2 @@
+INSERT INTO `Users` (`id`, `role_id`, `email`, `password`, `fullname`, `phone`, `createdAt`, `updatedAt`) VALUES (1, 1, 'admin@email.com', '$2a$10$Pro/cDtR0ss8bQZ9o74w4utOb/RuPxhHpZ4OnYAItBsfwOve5CMkS', 'Admin Administrator', '0877676676', '2022-10-08 15:36:28', '2022-10-08 15:36:28');
+INSERT INTO `Users` (`id`, `role_id`, `email`, `password`, `fullname`, `phone`, `createdAt`, `updatedAt`) VALUES (2, 2, 'user@email.com', '$2a$10$Pro/cDtR0ss8bQZ9o74w4utOb/RuPxhHpZ4OnYAItBsfwOve5CMkS', 'User Biasa', '34857458436', '2022-10-09 04:39:41', '2022-10-09 04:39:41');
